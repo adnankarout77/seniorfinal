@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>United Hope - Sign Up</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <img src="images/logo.png" alt="United Hope Logo" class="logo" />
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+          <li><button class="btn-secondary"><a href="signup.html">Sign Up</a></button></li>
+          <li>
+            <button class="btn"><a href="login.html">Login</a></button>
+          </li>
+        <div class="hamburger-menu">&#9776;</div>
+      </nav>
+    </header>
+
+    <!-- Sign Up Section -->
+    <section class="login-section">
+      <div class="login-container">
+        <h2>Create an Account</h2>
+        <p>Join us and start making a difference.</p>
+        <form id="signup-form" method="post" >
+
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your full name"
+            required
+          />
+
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            required
+          />
+
+          <label for="confirm-password">Confirm Password</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            placeholder="Confirm your password"
+            required
+          />
+          <label for="role">Sign up as:</label>
+          <select id="role" name="role">
+            <option value="Donor">Donor</option>
+            <option value="Recipient">Recipient</option>
+          </select>
+          <br />
+          <br />
+          <button id="signup-button" type="submit" class="btn">Sign Up</button>
+        </form>
+        <br />
+        <p>Already have an account? <a href="login.html">Login</a></p>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>© 2025 United Hope | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,795 @@
+/* Reset & Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+/*Header */
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #f8f8f8; 
+    z-index: 1000; 
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+    position: sticky;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+/* Mobile Navigation */
+.hamburger-menu {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: url('images/hero.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background: red;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-secondary {
+    display: inline-block;
+    background: green;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* How It Works Section */
+.how-it-works {
+    margin-top: 40px;
+    width: 90%;
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.how-it-works img {
+    width: 50px;
+    height:auto ;
+}
+
+/* Steps */
+.steps {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Individual Step */
+.step {
+    display: flex;
+    flex-direction: column;  /* Stack image and text */
+    align-items: center;
+    text-align: center;
+    width: 120px; /* Adjust width */
+}
+
+/* Step Images */
+.step img {
+    width: 80px; /* Adjust image size */
+    height: auto;
+}
+
+/* Step Descriptions */
+.step p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+    color: black;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background: #333;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: auto;
+}
+/* Impact Section */
+.impact {
+    margin-top: 20px;
+    text-align: center;
+    padding: 40px 20px;
+    background: #f4f4f4;
+}
+
+.stats {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.stat {
+    width: 100px;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stat h3 {
+    font-size: 24px;
+    color: red;
+}
+
+/* Call to Action */
+.cta {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.cta h2 {
+    margin-bottom: 20px;
+}
+/* Login Page Styling */
+.login-section {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.login-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+}
+
+.login-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.login-container p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/* About Us Page Specific Styles */
+
+/* Mission Section */
+.mission-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f8f8f8;
+}
+
+.mission-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+}
+
+/* Timeline Section */
+.timeline-section {
+    padding: 70px 20px;
+    background: white;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    max-width: 700px;
+    margin: auto;
+    position: relative;
+    padding: 20px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background: red;
+    transform: translateX(-50%);
+}
+
+.timeline-event {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 450px;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin: 20px 0;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.timeline-event .year {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.timeline-event.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.timeline-event:hover {
+    background: #ffeeba;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Impact Section */
+.impact-section {
+    text-align: center;
+    padding: 70px 20px;
+    background: #f8f8f8;
+    margin-bottom: 40px;
+}
+
+.impact-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.stats {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 180px;
+    margin: 10px;
+}
+
+.stats h3 {
+    font-size: 26px;
+    color: red;
+    margin-bottom: 10px;
+}
+
+/* How You Can Help Section */
+.help-section {
+    text-align: center;
+    padding: 70px 20px;
+    background: white;
+    margin-bottom: 40px;
+}
+/* Founder Message */
+.founder-message {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f8f8f8;
+    font-style: italic;
+}
+
+.welcome-section {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background: url('images/donor-banner.jpg') center/cover no-repeat;
+}
+
+.welcome-container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Donation Summary Section */
+.donation-summary {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f8f8f8;
+}
+
+.donor-stats {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.donor-stat {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 160px;
+}
+
+.donor-stat img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.donor-stat h3 {
+    font-size: 22px;
+    color: red;
+    margin-bottom: 5px;
+}
+
+/* Recent Donations */
+.recent-donations {
+    text-align: center;
+    padding: 50px 20px;
+    background: white;
+}
+
+#donation-list {
+    list-style: none;
+    padding: 0;
+}
+
+#donation-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+#donation-list img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.donor-status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.donor-status.pending {
+    background: yellow;
+    color: black;
+}
+
+.donor-status.completed {
+    background: green;
+    color: white;
+}
+
+/* Impact Section */
+.impact-overview {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f8f8f8;
+}
+
+.donor-impact-stats {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.donor-impact-stats .donor-stat {
+    width: 180px;
+}
+
+/* Action Buttons */
+.action-buttons {
+    text-align: center;
+    padding: 50px 20px;
+}
+.impact-stats img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+/* Contact Information Section */
+.contact-info {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f8f8f8;
+}
+
+.contact-details p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.contact-details a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form Section */
+.contact-form {
+    text-align: center;
+    padding: 50px 20px;
+    background: white;
+}
+
+.contact-form form {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    height: 120px;
+}
+
+/* Social Media Section */
+.social-media {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f8f8f8;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons img {
+    width: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+.request-summary {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 20px;
+    flex-wrap: wrap;
+}
+
+.summary-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+
+/* Recent Requests Section */
+.recent-requests {
+    padding: 30px 20px;
+}
+
+.request-item {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.status.pending {
+    color: orange;
+}
+
+.status.approved {
+    color: green;
+}
+
+/* Available Donations Section */
+.available-donations {
+    padding: 30px 20px;
+}
+
+.donation-item {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+.post-request {
+    text-align: center;
+    padding: 30px 20px;
+    background: #f8f8f8;
+}
+
+.post-request form {
+    width: 100%;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post-request label {
+    font-weight: bold;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.post-request textarea, .post-request input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.category-options, .urgency-options, .pickup-options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.category-options label, .urgency-options label, .pickup-options label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.category-options input, .urgency-options input, .pickup-options input {
+    margin-right: 10px;
+}
+
+/* Detect Location Button */
+.detect-location {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    text-align: center;
+}
+
+.detect-location:hover {
+    background: darkgreen;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        width: 200px;
+        background: red;
+        border-radius: 5px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    /* Show when toggled */
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 12px;
+        text-align: left;
+    }
+
+    .nav-links li a {
+        display: block;
+        font-size: 16px;
+        color: black;
+        font-weight: bold;
+    }
+
+    /* Hover Effect */
+    .nav-links li:hover {
+        background: rgba(255, 255, 255, 0.8); /* Yellow with opacity */
+    }
+
+    /* Show hamburger menu only on mobile */
+    .hamburger-menu {
+        display: block;
+    }
+
+    .hero, .how-it-works {
+        width: 95%;
+    }
+
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step {
+        width: 80%;
+    }
+    .features, .steps, .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+    .login-container {
+        width: 95%;
+    }
+    .donor-stats, .donor-impact-stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .donor-stat {
+        width: 90%;
+    }
+    .contact-form form {
+        width: 90%;
+    }
+    .request-summary {
+        flex-direction: column;
+        align-items: center;
+    }
+    .post-request form {
+        width: 90%;
+    }
+    .category-options, .urgency-options, .pickup-options {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post a Request - United Hope</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <img src="images/logo.png" alt="United Hope Logo" class="logo" />
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="recipient-dashboard.html">Dashboard</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li>
+            <button class="btn"><a href="index.html">Sign Out</a></button>
+          </li>
+        </ul>
+        <div class="hamburger-menu">&#9776;</div>
+      </nav>
+    </header>
+
+    <!-- Post Request Section -->
+    <section class="post-request">
+      <h2>Post a Donation Request</h2>
+      <p>Describe your needs so donors can help.</p>
+      <form
+        action="#"
+        method="POST"
+        id="post-request-form"
+        enctype="multipart/form-data"
+      >
+        <label for="description">Request Description</label>
+        <textarea
+          id="description"
+          name="description"
+          placeholder="e.g., 5 meals needed"
+          required
+        ></textarea>
+
+        <label for="location">Your Location</label>
+        <input
+          type="text"
+          id="location"
+          name="location"
+          placeholder="Enter your location"
+          required
+        />
+        <button
+          type="button"
+          class="detect-location"
+          onclick="detectLocation()"
+        >
+          Detect Location
+        </button>
+
+        <label>Category</label>
+        <div class="category-options">
+          <input type="checkbox" name="category" value="food" /> Food
+          <input type="checkbox" name="category" value="money" /> Money
+          <input type="checkbox" name="category" value="meds" /> Meds
+          <input type="checkbox" name="category" value="clothes" /> Clothes
+        </div>
+
+        <label>Urgency</label>
+        <div class="urgency-options">
+          <input type="radio" name="urgency" value="high" required /> High
+          <input type="radio" name="urgency" value="medium" /> Medium
+          <input type="radio" name="urgency" value="low" /> Low
+        </div>
+
+        <label>Pickup Type</label>
+        <div class="pickup-options">
+          <input type="radio" name="pickup" value="self" required /> Self Pickup
+          <input type="radio" name="pickup" value="volunteer" /> Volunteer
+          Needed
+        </div>
+        <label for="request-image">Upload Image (PNG only)</label>
+        <input
+          type="file"
+          id="request-image"
+          name="request-image"
+          accept="image/png"
+          onchange="previewImage()"
+        />
+        <img
+          id="image-preview"
+          src="#"
+          alt="Image Preview"
+          style="display: none; max-width: 100%; height: auto; margin-top: 10px"
+        />
+        <button type="submit" class="btn primary">Submit Request</button>
+      </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>© 2025 United Hope | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

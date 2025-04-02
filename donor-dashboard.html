@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>United Hope - Donor Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' https://www.google.com;"
+    />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <img src="images/logo.png" alt="United Hope Logo" class="logo" />
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="donor-dashboard.html" class="active">Dashboard</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="post-request.html">View Requests</a></li>
+          <li><a href="index.html">Logout</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+        <div class="hamburger-menu">&#9776;</div>
+      </nav>
+    </header>
+
+    <!-- Welcome Section with Background Image -->
+    <section class="welcome-section">
+      <div class="welcome-container">
+        <h2>Welcome, <span id="donor-name">Donor Name</span>!</h2>
+        <p>Your generosity is making a real difference.</p>
+      </div>
+    </section>
+
+    <!-- Donation Summary Section -->
+    <section class="donation-summary">
+      <h2>Donation Overview</h2>
+      <div class="donor-stats">
+        <div class="donor-stat">
+          <img src="images/donation.png" alt="Total Donations" />
+          <h3 id="total-donations">0</h3>
+          <p>Total Donations</p>
+        </div>
+        <div class="donor-stat">
+          <img src="images/refresh.png" alt="Ongoing Donations" />
+          <h3 id="ongoing-donations">0</h3>
+          <p>Ongoing Donations</p>
+        </div>
+        <div class="donor-stat">
+          <img src="images/checked.png" alt="Completed Donations" />
+          <h3 id="completed-donations">0</h3>
+          <p>Completed Donations</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recent Donations Section -->
+    <section class="recent-donations">
+      <h2>Recent Donations</h2>
+      <ul id="donation-list">
+        <li>
+          <img src="images/salad.png" alt="Food" /> Food -
+          <span class="status pending">Pending</span>
+        </li>
+        <li>
+          <img src="images/request-money.png" alt="Money" /> $50 -
+          <span class="status completed">Completed</span>
+        </li>
+        <li>
+          <img src="images/laundry.png" alt="Clothes" /> Clothes -
+          <span class="status completed">Completed</span>
+        </li>
+        <li>
+          <img src="images/medicine.png" alt="Medical Aid" /> Medical Aid -
+          <span class="status pending">Pending</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Impact Overview Section -->
+    <section class="impact-overview">
+      <h2>Your Impact</h2>
+      <div class="impact-stats">
+        <div class="stat">
+          <img src="images/salad.png" alt="Meals Provided" />
+          <h3 id="meals-provided">0</h3>
+          <p>Meals Provided</p>
+        </div>
+        <div class="stat">
+          <img src="images/diversity.png" alt="Families Helped" />
+          <h3 id="families-helped">0</h3>
+          <p>Families Helped</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Action Buttons -->
+    <section class="action-buttons">
+      <a href="donor-dashboard-respond.html" class="btn btn-secondary"
+        >View Requests</a
+      >
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>© 2025 United Hope | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

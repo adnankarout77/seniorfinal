@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>United Hope - Login</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <img src="images/logo.png" alt="United Hope Logo" class="logo" />
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="post-request.html">Request Help</a></li>
+          <li><a href="login.html" class="active">Login</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+        <div class="hamburger-menu">&#9776;</div>
+      </nav>
+    </header>
+
+    <!-- Login Section -->
+    <section class="login-section">
+      <div class="login-container">
+        <h2>Welcome Back</h2>
+        <p>Log in to your account</p>
+        <form id="login-form">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            required
+          />
+          <div
+            class="g-recaptcha"
+            data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+          ></div>
+          <button type="submit" class="btn">Login</button><br />
+          <br />
+          <a href="#" class="forgot-password">Forgot Password?</a>
+        </form>
+        <br />
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>© 2025 United Hope | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
